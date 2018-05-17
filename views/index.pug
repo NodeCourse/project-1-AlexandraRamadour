@@ -1,0 +1,33 @@
+html
+    head
+        title Blog
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        a(href='/inscription/') Inscription
+
+        each article in articles
+            article
+                a(href='/review/' + article.id)
+                    h1 #{article.title}
+        
+
+                
+        form(method="POST")
+            p
+                strong Create a new article
+            label(for="title") Title
+            br
+            input(type="text", id="title", name="title", placeholder="Some Great Article Title")
+            br
+            label(for="content") Content
+            br
+            textarea(id="content", name="content", place)
+            br
+            label(for="eval") Note
+            br
+            input(type="number", id="eval", name="eval", placeholder="Note entre 0 et 5")
+            br
+            button(type="submit") Submit
+
+            
+    
