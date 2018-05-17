@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mysql2": "^1.5.3",
+    "pug": "^2.0.3",
+    "sequelize": "^4.37.7"
+  },
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NodeCourse/project-1-AlexandraRamadour.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NodeCourse/project-1-AlexandraRamadour/issues"
+  },
+  "homepage": "https://github.com/NodeCourse/project-1-AlexandraRamadour#readme"
+}
