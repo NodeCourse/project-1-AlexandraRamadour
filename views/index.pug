@@ -1,11 +1,17 @@
 html
     head
-        title Blog
+        title Games reviews
         link(rel="stylesheet", href="/css/style.css")
     body
+        if user
+            h1 Welcome #{user.firstname} #{user.lastname}!
+        
         a(href='/inscription/') Inscription
+        br
+        a(href='/login/') Connexion
 
-        each article in articles
+
+        for article in articles
             article
                 a(href='/review/' + article.id)
                     h1 #{article.title}
@@ -19,7 +25,7 @@ html
             br
             input(type="text", id="title", name="title", placeholder="Some Great Article Title")
             br
-            label(for="content") Content
+            label(for="content") Review
             br
             textarea(id="content", name="content", place)
             br
